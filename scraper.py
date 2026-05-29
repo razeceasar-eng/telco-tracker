@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 
 def scrape_xfinity_cluster():
     targets = [
-        {"provider": "Xfinity Mobile", "url": "https://www.xfinity.com/mobile/"},
-        {"provider": "Xfinity Internet", "url": "https://www.xfinity.com/learn/internet-service"},
+        {"provider": "Xfinity Mobile", "url": "https://www.xfinity.com/learn/mobile/plan"},
+        {"provider": "Xfinity Internet", "url": "https://www.xfinity.com/learn/deals/internet"},
         {"provider": "Xfinity NOW", "url": "https://www.xfinity.com/now"}
     ]
 
