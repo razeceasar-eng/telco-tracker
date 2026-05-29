@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "provider": "Telco Alpha",
+        "title": "Unlimited Experience Plan: Get up to $400 Back",
+        "description": "Switch today, activate a qualifying line on America's best 5G network infrastructure, and redeem via Virtual Prepaid Mastercard.",
+        "source_url": "https://www.t-mobile.com/offers"
+    },
+    {
+        "provider": "Telco Alpha",
+        "title": "Save up to $300 on Next-Gen Smartwatches",
+        "description": "Add a new watch connectivity line on a qualifying wearable plan and save instantly via 24 monthly bill credits.",
+        "source_url": "https://www.t-mobile.com/offers"
+    },
+    {
+        "provider": "Telco Beta",
+        "title": "Home Internet Bundle Upgrade Promo",
+        "description": "Unlock significant ecosystem savings when you bundle premium Fixed-Wireless 5G internet with qualifying mobile data lines.",
+        "source_url": "https://www.verizon.com/deals"
+    }
+]
