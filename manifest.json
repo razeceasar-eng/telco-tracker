@@ -1,0 +1,22 @@
+{
+  "name": "Xfinity Promo Hub",
+  "short_name": "XfinityPromos",
+  "description": "Track live Mobile, Internet, and NOW deals from Xfinity.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#4a00e0",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/fluency/192/ffffff/phone.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://img.icons8.com/fluency/512/ffffff/phone.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
