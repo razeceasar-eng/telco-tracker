@@ -3,187 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xfinity Hyper-Tracker (Raze Engine) (Trial)</title>
+    <title>Xfinity Promo Hub</title>
+    
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#4a00e0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://img.icons8.com/fluency/192/ffffff/phone.png">
+
     <style>
         :root {
             --primary: #4a00e0;
-            --accent: #8e2de2;
-            --bg: #f8f9fa;
-            --text: #2d3436;
+            --accent: #ff007f;
+            --bg: #111215;
+            --card-bg: #1e2026;
+            --text-main: #ffffff;
+            --text-sub: #a0a5b5;
         }
         body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-            background: var(--bg);
-            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
             margin: 0;
-            padding: 30px 15px;
+            padding: 20px 15px;
+            -webkit-user-select: none; /* Emulate a native app feel */
         }
-        .app-wrapper { 
-            max-width: 1200px; 
-            margin: 0 auto; 
+        .app-container {
+            max-width: 600px;
+            margin: 0 auto;
         }
-        
-        /* Header Dashboard Panel */
-        .control-panel {
-            background: #fff;
-            padding: 25px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.04);
-            margin-bottom: 40px;
-            border: 1px solid #edf2f7;
+        .header {
+            text-align: center;
+            padding: 20px 0 30px;
         }
-        .brand-header h1 { 
-            margin: 0 0 5px 0; 
-            font-size: 26px; 
-            background: linear-gradient(to right, var(--primary), var(--accent)); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
+        .header h1 {
+            font-size: 24px;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.5px;
         }
-        .brand-header p { 
-            margin: 0; 
-            color: #7f8c8d; 
-            font-size: 14px; 
+        .header p {
+            color: var(--text-sub);
+            font-size: 13px;
+            margin: 0;
         }
-
-        /* Grid Framework */
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); 
-            gap: 25px; 
+        .grid {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
         .card {
-            background: #fff; 
-            border-radius: 14px; 
-            padding: 25px;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-            border: 1px solid #edf2f7; 
-            transition: transform 0.2s;
-        }
-        .card:hover { 
-            transform: translateY(-4px); 
-        }
-        .provider-pill {
-            background: #dfe6e9; 
-            color: #2d3436; 
-            font-size: 11px;
-            font-weight: bold; 
-            padding: 4px 10px; 
-            border-radius: 20px;
-            display: inline-block; 
-            margin-bottom: 15px; 
-            text-transform: uppercase;
-        }
-        .card-title { 
-            margin: 0 0 12px 0; 
-            font-size: 18px; 
-            color: #000; 
-            line-height: 1.4; 
-        }
-        .card-desc { 
-            color: #636e72; 
-            font-size: 14px; 
-            line-height: 1.6; 
-            margin: 0 0 25px 0; 
-        }
-        
-        /* Direct Action Hyperlink Button */
-        .deal-link {
-            text-decoration: none; 
-            background: #f1f2f6; 
-            color: var(--primary);
-            text-align: center; 
-            padding: 12px; 
-            border-radius: 8px;
-            font-weight: 600; 
-            font-size: 13px; 
-            display: block;
-            transition: all 0.2s; 
-            border: 1px solid transparent;
-        }
-        .deal-link:hover { 
-            background: #fff; 
-            border-color: var(--primary); 
-        }
-
-        /* System Error Message Container */
-        .system-note {
-            grid-column: 1 / -1;
-            text-align: center;
-            background: #fff3cd;
-            color: #856404;
+            background-color: var(--card-bg);
+            border-radius: 14px;
             padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #ffeeba;
-            line-height: 1.6;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            border: 1px solid #2a2e3d;
         }
-        .system-note ol {
-            text-align: left;
+        .badge {
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            border-radius: 6px;
             display: inline-block;
-            margin-top: 10px;
-            padding-left: 20px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        /* Color code badges based on Xfinity department */
+        .mobile-badge { background-color: #00bcd4; color: #000; }
+        .internet-badge { background-color: #9c27b0; color: #fff; }
+        .now-badge { background-color: #ff9800; color: #000; }
+        
+        .card-title {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
+            font-weight: 700;
+        }
+        .card-desc {
+            color: var(--text-sub);
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0 0 18px 0;
+        }
+        .action-link {
+            display: block;
+            text-align: center;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .action-link:hover {
+            background-color: #3700b3;
         }
     </style>
 </head>
 <body>
 
-    <div class="app-wrapper">
-        <div class="control-panel">
-            <div class="brand-header">
-                <h1>📱 Xfinity Hyper-Tracker (Raze Engine)</h1>
-                <p>Trial Mode: Tracking live promotional matrix assets using static automation architecture</p>
-            </div>
+    <div class="app-container">
+        <div class="header">
+            <h1>📱 Xfinity Deal Tracker</h1>
+            <p>Live Promotions Marketplace Assets</p>
         </div>
 
-        <div class="grid" id="display-matrix">
-            <p style="grid-column: 1/-1; text-align: center; color: #7f8c8d;">Initializing local client connection...</p>
+        <div class="grid" id="app-matrix">
+            <p style="text-align: center; color: var(--text-sub);">Loading active deals...</p>
         </div>
     </div>
 
     <script>
-        // Reads the shared promos.json data generated by the GitHub Actions pipeline
-        fetch('./promos.json?cache_bypass=' + Date.now())
+        // Register Service Worker for PWA compliance
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(() => console.log("Service Worker Registered Safely"))
+                .catch(err => console.error("Service worker registration failed:", err));
+        }
+
+        // Fetch data array
+        fetch('./promos.json?nocache=' + Date.now())
             .then(res => {
-                if(!res.ok) throw new Error("Primary database asset file (promos.json) not found yet.");
+                if(!res.ok) throw new Error("Awaiting backend pipeline execution cycle...");
                 return res.json();
             })
-            .then(data => renderPromotionMatrix(data))
+            .then(data => renderPWAInterface(data))
             .catch(err => {
-                document.getElementById('display-matrix').innerHTML = `
-                    <div class="system-note">
-                        <strong>🛠️ Setup Step Needed:</strong> ${err.message}<br>
-                        Because this is a secure trial repo, you just need to start the backend engine inside GitHub to create this file:<br>
-                        <ol>
-                            <li>Go to your project repository on <strong>GitHub.com</strong></li>
-                            <li>Click the <strong>Actions</strong> tab along the top menu</li>
-                            <li>Click <strong>Multi-Target Live Scraper</strong> in the left sidebar</li>
-                            <li>Click the <strong>Run workflow</strong> button on the right, and confirm</li>
-                        </ol>
-                        <br>Once the runtime finishes (about 60s), refresh this page to see your live data!
-                    </div>`;
+                document.getElementById('app-matrix').innerHTML = `
+                    <p style="text-align:center; color: var(--text-sub); padding:20px;">
+                        ${err.message}<br><br>
+                        <span style="font-size:12px;">Trigger your GitHub Actions workflow manually to generate data.</span>
+                    </p>`;
             });
 
-        function renderPromotionMatrix(items) {
-            const matrix = document.getElementById('display-matrix');
-            matrix.innerHTML = ''; // Flush placeholder logs
+        function renderPWAInterface(promotions) {
+            const container = document.getElementById('app-matrix');
+            container.innerHTML = '';
 
-            if(items.length === 0) {
-                matrix.innerHTML = '<p style="grid-column: 1/-1; text-align: center;">No active promos caught in the cluster filters right now.</p>';
-                return;
-            }
+            promotions.forEach(item => {
+                // Determine CSS badge layout context mapping
+                let badgeClass = 'internet-badge';
+                if(item.provider.toLowerCase().includes('mobile')) badgeClass = 'mobile-badge';
+                if(item.provider.toLowerCase().includes('now')) badgeClass = 'now-badge';
 
-            items.forEach(item => {
-                matrix.innerHTML += `
+                container.innerHTML += `
                     <div class="card">
-                        <div>
-                            <span class="provider-pill">${item.provider}</span>
-                            <h3 class="card-title">${item.title}</h3>
-                            <p class="card-desc">${item.description}</p>
-                        </div>
-                        <a href="${item.source_url}" target="_blank" rel="noopener noreferrer" class="deal-link">
-                            View Deal Details Original Site →
+                        <span class="badge ${badgeClass}">${item.provider}</span>
+                        <h3 class="card-title">${item.title}</h3>
+                        <p class="card-desc">${item.description}</p>
+                        <a href="${item.source_url}" target="_blank" rel="noopener noreferrer" class="action-link">
+                            View Deal on Official Site →
                         </a>
                     </div>
                 `;
