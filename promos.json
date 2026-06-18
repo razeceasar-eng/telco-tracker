@@ -73,7 +73,7 @@
     },
     {
         "provider": "Xfinity Internet",
-        "title": "Get online in minutes with same-day delivery",
+        "title": "Get online in minutes with same-day WiFi",
         "description": "Tap below to view full campaign eligibility criteria.",
         "source_url": "https://www.xfinity.com/learn/deals/internet"
     },
@@ -100,35 +100,5 @@
         "title": "There’s even more to love from Xfinity",
         "description": "Tap below to view full campaign eligibility criteria.",
         "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Prepaid internet, mobile, and TV.\n\nAll-in monthly prices.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Internet starting at $30/mo.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Mobile made for you.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Save on your favorite streaming.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Get started — fast",
-        "description": "Set up, power up, and use in minutes.",
-        "source_url": "https://www.xfinity.com/now"
     }
 ]
