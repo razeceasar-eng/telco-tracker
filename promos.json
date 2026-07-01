@@ -1,6 +1,12 @@
 [
     {
         "provider": "Xfinity Mobile",
+        "title": "T-Mobile raising your rate?",
+        "description": "Tap below to view full campaign eligibility criteria.",
+        "source_url": "https://www.xfinity.com/learn/mobile/plan"
+    },
+    {
+        "provider": "Xfinity Mobile",
         "title": "Xfinity Mobile Plans",
         "description": "Tap below to view full campaign eligibility criteria.",
         "source_url": "https://www.xfinity.com/learn/mobile/plan"
