@@ -1,158 +1,20 @@
 [
     {
         "provider": "Xfinity Mobile",
-        "title": "Xfinity Mobile Plans",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "No more phone plan math. It's all included with our latest plans.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Save with our All-In Tablet & Watch Plan",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Connect up to 10 cellular tablets and watches for $35/mo. Included with our latest plans.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Poof! Make half your mobile bill disappear",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Xfinity Mobile support",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "The best mobile coverage, with 5G and millions of hotspots",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Xfinity Mobile runs on the 5G network with the best mobile coverage in the US.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "What is the difference between Mobile Select and Mobile Plus?",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Does Xfinity Mobile have unlimited data?",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Do I need to be an Xfinity Internet customer to get Xfinity Mobile?",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
-    },
-    {
-        "provider": "Xfinity Mobile",
-        "title": "Does Xfinity Mobile have plans for tablets and smartwatches?",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/mobile/plan"
+        "title": "Get up to $500 Off Select 5G Devices",
+        "description": "Switch to Xfinity Mobile and receive substantial device credits when you trade in an eligible device on an Unlimited plan.",
+        "source_url": "https://www.xfinity.com/mobile/"
     },
     {
         "provider": "Xfinity Internet",
-        "title": "Xfinity Internet Deals",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "Add Mobile Plus, get iPhone 18 Pro Max on us",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "Get award-winning WiFi — with everything included",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "Switch to Xfinity Mobile and cut your bill in half in 10 minutes",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "Watch, and save on, football with Xfinity WiFi",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "We’ve got your Saturdays, and so much more, covered.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "Get 50% off NFL Sunday Ticket from YouTube",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "New home, same great service. Make your move with Xfinity.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
-    },
-    {
-        "provider": "Xfinity Internet",
-        "title": "There’s even more to love from Xfinity",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/learn/deals/internet"
+        "title": "Connect More Plan: Speeds up to 300 Mbps",
+        "description": "Get fast, reliable home internet with a 1-year price guarantee. Ideal for remote working and high-definition video streaming.",
+        "source_url": "https://www.xfinity.com/learn/internet-service"
     },
     {
         "provider": "Xfinity NOW",
-        "title": "Prepaid internet, mobile, and TV.\n\nAll-in monthly prices.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Internet starting at $30/mo.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Mobile made for you.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Save on your favorite streaming.",
-        "description": "Tap below to view full campaign eligibility criteria.",
-        "source_url": "https://www.xfinity.com/now"
-    },
-    {
-        "provider": "Xfinity NOW",
-        "title": "Get started — fast",
-        "description": "Set up, power up, and use in minutes.",
+        "title": "NOW Internet: Prepaid $30/mo Flat Rate",
+        "description": "No contracts, no credit checks, and unlimited data included. Simple prepaid high-speed internet designed for straightforward budgeting.",
         "source_url": "https://www.xfinity.com/now"
     }
 ]
